@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+  --gradient-shadow: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: url(./pexels-cátia-matos-1072179.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 1rem;
+  width: 90%;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+.subtitle {
+  font-weight: 400;
+}
+
+.main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  height: 100 vh;
+  border: 2px solid #3a503c;
+  border-radius: 1rem;
+  box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
+  -webkit-box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
+  -moz-box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
+  background: url(pexels-arvind-shakya-668282.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* Todo App */
+.todo {
+  width: 60%;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  height: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  background: linear-gradient(0deg, white, white);
+}
+.todo:before,
+.todo:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: var(--gradient-shadow);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+  border-radius: 1.1rem;
+}
+
+.todo:after {
+  filter: blur(20px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.todo-box {
+  min-height: 6vh;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-box input {
+  min-height: 100%;
+}
+
+.todo-headline {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gif {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.todo input[type="text"] {
+  min-height: 3rem;
+  outline: none;
+  border: 3px solid green;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 3px 5px;
+  width: 80%;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.todo button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  border-radius: 7px;
+  background-color: #003E1F;
+  color: white;
+  width: 20%;
+  padding: 5px;
+}
+
+.todo button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.TodoList {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+}
+
+.TodoList li {
+  line-height: 2.5rem;
+  word-spacing: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 705px;
+  padding-right: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.TodoList li:hover{
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: green;
+}
+
+.removebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  left: 90%;
+  margin-left: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+}
+.removebtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: red;
+}
+
+.TodoList button {
+  height: 100%;
+  text-align: center;
+  background-color: #a0d468;
+  margin-left: 1rem;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
+  cursor: pointer;
+}
+.checked:hover{
+  cursor: pointer;
+}
+
+/* Sign Up form */
+.signUp {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.main {
+  width: 50%;
+}
+
+.sign-up-form {
+  margin: auto;
+  max-width: 400px;
+  width: 95%;
+}
+.sign-up-form label {
+  margin-bottom: 0.4rem;
+  display: block;
+  font-weight: 500;
+}
+.sign-up-form input {
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #264037;
+  outline: none;
+  color: white;
+  /* Blur */
+}
+
+.sign-up-form input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.submit-btn {
+  width: 10rem;
+  padding: 10px 10px;
+  margin-left: 50%;
+  margin-top: 10px;
+  transform: translate(-50%);
+  outline: none;
+  border: 0;
+  background-color: #3a503c;
+  color: white;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
+  -webkit-box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
+  -moz-box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
+}
