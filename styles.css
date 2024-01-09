@@ -23,12 +23,12 @@
 body {
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-  overflow: hidden;
 }
 
 .header {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
   width: 100%;
   background-image: url(./pexels-cátia-matos-1072179.jpg);
   background-position: center;
