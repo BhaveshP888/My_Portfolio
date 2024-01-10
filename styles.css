@@ -58,12 +58,14 @@ body {
 }
 
 .logo {
+  font-size: 3rem;
   font-weight: 700;
 }
 
 .nav-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   align-items: center;
   width: 30%;
