@@ -78,9 +78,8 @@ body {
 .nav-link {
   text-decoration: none;
   color: white;
-  padding: 15px 20px;
+  padding: 1rem;
   position: relative;
-
 }
 
 a:after {
