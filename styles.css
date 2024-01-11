@@ -39,12 +39,21 @@ body {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 5rem;
   overflow:auto;
   padding: 2rem;
   word-wrap: none;
+  backdrop-filter: blur(5px);
 }
+/* .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+} */
 
 .menuBtn{
   display: none;
@@ -58,10 +67,8 @@ body {
 }
 
 .logo {
-  margin: 0;
-  padding-top: 0px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-items {
@@ -257,7 +264,7 @@ a:hover:after {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  word-break: break-all;
+  word-break:keep-all;
 }
 .TodoList li:hover{
   cursor: pointer;
