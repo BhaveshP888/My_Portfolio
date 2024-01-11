@@ -67,7 +67,7 @@ body {
 }
 
 .logo {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -132,7 +132,7 @@ a:hover:after {
   box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
   -webkit-box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
   -moz-box-shadow: 20px 25px 100px 5px rgba(97, 109, 71, 0.58);
-  background: url(pexels-arvind-shakya-668282.jpg);
+  background: url(space2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,14 +315,17 @@ a:hover:after {
 /* Sign Up form */
 .signUp {
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 3.5rem;
+  
+
 }
 
 .main {
   width: 70%;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 350px){
   .signUp {
@@ -331,12 +334,15 @@ a:hover:after {
 }
 
 .sign-up-form {
+  padding: 1rem;
+  border-radius: 20px;
   margin: auto;
   max-width: 400px;
   width: 95%;
+  backdrop-filter: blur(10px);
 }
 .sign-up-form label {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   display: block;
   font-weight: 500;
 }
@@ -347,10 +353,14 @@ a:hover:after {
   padding: 10px;
   border: 0;
   border-radius: 8px;
-  background-color: #264037;
+  background: transparent;
   outline: none;
   color: white;
   /* Blur */
+}
+
+.sign-up-form input:hover{
+  border: 1px solid red;
 }
 
 .sign-up-form input::placeholder {
@@ -359,6 +369,7 @@ a:hover:after {
 }
 
 .submit-btn {
+  font-size: 1rem;
   width: 10rem;
   padding: 10px 10px;
   margin-left: 50%;
@@ -366,14 +377,14 @@ a:hover:after {
   transform: translate(-50%);
   outline: none;
   border: 0;
-  background-color: #3a503c;
+  background: transparent;
   color: white;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
-.submit-btn:hover {
-  box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
-  -webkit-box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
-  -moz-box-shadow: 19px 25px 100px 5px rgba(97, 109, 71, 0.58);
+.submit-btn:hover{
+  cursor: pointer;
+  font-size: 110%;
+  border: 1px solid red;
 }

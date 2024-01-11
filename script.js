@@ -25,10 +25,3 @@ todoContainer.addEventListener("click",function(e){
                 e.target.parentElement.remove(this.parentNode);
         }
 },false);
-
-
-let num = [1,4,6,8,9];
-
-for (let i = 0; i < num.length; i++){
-        console.log(i);
-}
