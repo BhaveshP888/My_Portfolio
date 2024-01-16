@@ -8,15 +8,18 @@ submitButton.addEventListener("click",function(){
         }else if(todoText.value !== ""){
         let li = document.createElement("li");
         li.textContent = todoText.value;
+        li.setAttribute("contenteditable", "true");
         todoContainer.append(li);
         const removebtn = document.createElement("span");
         removebtn.innerHTML = "\u00d7";
         removebtn.className = "removebtn";
         
         li.append(removebtn);
+        
 }
 todoText.value = "";
 });
+
 
 todoContainer.addEventListener("click",function(e){
         if(e.target.tagName === "LI"){
@@ -25,3 +28,4 @@ todoContainer.addEventListener("click",function(e){
                 e.target.parentElement.remove(this.parentNode);
         }
 },false);
+
