@@ -72,9 +72,9 @@ body {
 }
 
 .nav-items {
- display: flex;
- align-items: center;
-  gap:1rem;
+  display: flex;
+  align-items: center;
+  gap:2rem;
   width: 30%;
   list-style-type: none;
   min-width: 2rem;
