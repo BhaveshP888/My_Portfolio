@@ -41,6 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 2rem;
   height: 6rem;
   overflow:auto;
   padding: 1rem;
@@ -79,7 +80,7 @@ body {
   width: 30%;
   list-style-type: none;
   min-width: 2rem;
-  /* padding-top: 1rem; */
+  padding-top: 0.5rem;
 }
 
 .nav-link {
