@@ -45,6 +45,7 @@ body {
   overflow:auto;
   padding: 1rem;
   backdrop-filter: blur(5px);
+  margin: auto;
 }
 /* .sticky{
   position: fixed;
@@ -84,7 +85,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: white;
-  /* padding: 1rem; */
+  padding: 2rem;
   position: relative;
 }
 
