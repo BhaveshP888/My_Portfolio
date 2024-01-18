@@ -78,7 +78,7 @@ body {
   width: 30%;
   list-style-type: none;
   min-width: 2rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
 .nav-link {
