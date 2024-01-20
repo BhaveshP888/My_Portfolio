@@ -110,6 +110,9 @@ a:hover:after {
 }
 
 @media (max-width: 1150px) {
+  body{
+    overflow-x: hidden;
+  }
   .menuBtn {
     display: block;
     position: absolute;
